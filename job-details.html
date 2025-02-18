@@ -302,9 +302,9 @@ function loadExternalScriptAndBuildIframe() {
 
 function buildIframe() {
     var iFrameUrl = 'https://web103.reachmee.com/ext/';
-    var validator = 'f7c6898ffd907c13a578f34df7f67fa0';
-    var iid = 'I021';
-    var customer = '1808';
+    var validator = 'c16297a197cae241e8275b849b8be333';
+    var iid = 'I018';
+    var customer = '1562';
     var site = '6';
     var iHelperUrl = 'https://headlessjobsites.github.io/demo/job-details.html?';
     var height = '4000';
@@ -472,7 +472,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     iframe.style.width = "100%";
                     iframe.style.border = "none";
                     iframe.id = "applicationFormIframe";
-                    const iframeSrc = `https://web103.reachmee.com/ext/I021/1808/apply?job_id=${jobId}&site=6&validator=f7c6898ffd907c13a578f34df7f67fa0&lang=NO&ihelper=${encodeURIComponent('https://career.talentech.com/jobs/rm?rmpage=job&rmjob=' + jobId)}`;
+                    const iframeSrc = `https://web103.reachmee.com/ext/I018/1562/apply?job_id=${jobId}&site=6&validator=c16297a197cae241e8275b849b8be333&lang=NO&ihelper=${encodeURIComponent('https://career.talentech.com/jobs/rm?rmpage=job&rmjob=' + jobId)}`;
                     iframe.setAttribute('src', iframeSrc);
                     document.getElementById('applicationFormContainer').appendChild(iframe);
                 }
@@ -572,7 +572,7 @@ window.addEventListener('message', function(event) {
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('agent').addEventListener('click', function() {
-        var iframeUrl = "https://web103.reachmee.com/ext/I021/1808/subscribe?site=6&lang=NO&validator=f7c6898ffd907c13a578f34df7f67fa0";
+        var iframeUrl = "https://web103.reachmee.com/ext/I018/1562/subscribe?site=6&lang=NO&validator=c16297a197cae241e8275b849b8be333";
         document.getElementById('modalIframe').src = iframeUrl;
         $('#exampleModal').modal('show');
     });
@@ -909,7 +909,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (openApplication !== null) {
         // Change the src of the iframe
         const applicationFormIframe = document.getElementById('applicationFormIframe');
-        applicationFormIframe.src = "https://web103.reachmee.com/ext/I021/1808/apply?site=6&lang=NO&validator=f7c6898ffd907c13a578f34df7f67fa0&job_id=-1";
+        applicationFormIframe.src = "https://web103.reachmee.com/ext/I018/1562/apply?site=6&lang=NO&validator=c16297a197cae241e8275b849b8be333&job_id=-1";
         
         // Hide the job description and metadata
         document.getElementById('our-process').style.display = 'none';
