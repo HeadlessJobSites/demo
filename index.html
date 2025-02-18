@@ -734,6 +734,10 @@ $(document).ready(function () {
             return (selectedCountry === 'All' || job.country === selectedCountry) &&
                    (selectedJobType === 'All' || job.title === selectedJobType);
         });
+        // Show message if there are now available positions
+        if (filteredJobs.length === 0) {
+            $('#jobList').append('<div class="text-center w-100">There are currently no vacancies published.</div>');
+        }
 
         // Add job cards to the DOM
         filteredJobs.forEach(job => {
